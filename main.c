@@ -151,10 +151,16 @@ void displayMenu(void) {
 }
 
 void displayResults(int decimal, int bitLength, int isSignedNegative) {
-    char binary[17];
-    char hex[17];
-    char powers[RESP_SIZE];
-    char response[RESP_SIZE];
+    char *binary = (char *)malloc(17 * sizeof(char));
+    char *hex = (char *)malloc(17 * sizeof(char));
+    char *powers = (char *)malloc(RESP_SIZE * sizeof(char));
+    char *response = (char *)malloc(RESP_SIZE * sizeof(char));
+
+    if (!binary || !hex || !powers || !response) {
+        os_ClrHome();
+        os_PutStrFull("Memory allocation failed!");
+        return;
+    }
 
     // Page 1: Basic conversions
     os_ClrHome();
@@ -206,6 +212,12 @@ void displayResults(int decimal, int bitLength, int isSignedNegative) {
     os_PutStrFull("Menu: any key...");
     while (!os_GetCSC())
         ;
+
+    // Free allocated memory
+    free(binary);
+    free(hex);
+    free(powers);
+    free(response);
 }
 
 void showError(const char *message) {
