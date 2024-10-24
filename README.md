@@ -23,8 +23,9 @@ This program allows users to convert numbers between binary, hexadecimal, and de
 
 ### Compilation
 
-1. Follow the instructions on the [CE Programming Toolchain](https://github.com/CE-Programming/toolchain) repository to set up the toolchain on your machine.
-2. Compile the source code using the provided toolchain commands.
+1. Download the [CE Programming Toolchain](https://github.com/CE-Programming/toolchain) repository.
+2. Open cedev.bat
+3. Compile the source code from there, see examples if you don't get it.
 
 ### Usage
 
