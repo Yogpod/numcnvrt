@@ -19,7 +19,6 @@ This program allows users to convert numbers between binary, hexadecimal, and de
 ### Prerequisites
 
 - A TI-84 Plus CE calculator or compatible environment for running the code.
-- [CE Programming Toolchain](https://github.com/CE-Programming/toolchain) for compiling the source code.
 
 ### Compilation
 
