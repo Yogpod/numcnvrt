@@ -4,7 +4,7 @@ This program allows users to convert numbers between binary, hexadecimal, and de
 
 ## Features
 
-- **Input Formats:** Accepts binary, hexadecimal (prefixed with `0x`), and decimal inputs.
+- **Input Formats:** Accepts binary, hexadecimal (not prefixed with `0x`), and decimal inputs.
 - **Conversions:** Converts input numbers to:
   - Binary
   - Hexadecimal
