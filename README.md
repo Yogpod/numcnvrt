@@ -22,7 +22,7 @@ This program allows users to convert numbers between binary, hexadecimal, and de
 
 ### Compilation
 
-1. Download the [CE Programming Toolchain]([https://github.com/CE-Programming/toolchain](https://github.com/CE-Programming/toolchain/releases/latest)).
+1. Download the [CE Programming Toolchain](https://github.com/CE-Programming/toolchain/releases/latest).
 2. Open cedev.bat
 3. Compile the source code from there, see examples if you don't get it.
 
